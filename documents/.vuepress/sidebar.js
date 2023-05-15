@@ -29,7 +29,8 @@ const nav = [
       }
     ]
   },
-  { text: 'js', link: '/js/1.介绍.md' }
+  { text: 'js', link: '/js/1.介绍.md' },
+  { text: 'html', link: '/html/1.介绍.md' }
 ];
 
 let sideBarConfigArr = [];
