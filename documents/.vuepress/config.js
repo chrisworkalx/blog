@@ -1,4 +1,5 @@
 const package = require('../../package.json');
+const { resolve } = require('path');
 module.exports = {
   title: 'chrisworkalx的博客',
   description: '用心记录每一天的生活',
@@ -11,5 +12,12 @@ module.exports = {
     sidebar: require('./sidebar').sidebar,
     nav: require('./sidebar').nav,
     displayAllHeaders: true
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@image': resolve(__dirname, './public')
+      }
+    }
   }
 };

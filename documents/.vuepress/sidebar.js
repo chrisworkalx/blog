@@ -47,7 +47,8 @@ const nav = [
   },
   { text: 'JS', link: '/js/1.介绍.md' },
   { text: 'HTML', link: '/html/1.介绍.md' },
-  { text: 'CSS', link: '/css/1.介绍.md' }
+  { text: 'CSS', link: '/css/1.介绍.md' },
+  { text: '浏览器', link: '/web/1.介绍.md' }
 ];
 
 let sideBarConfigArr = [];
