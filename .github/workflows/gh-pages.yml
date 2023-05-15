@@ -1,0 +1,52 @@
+# name: GitHub Actions Build and Deploy Gh-pages
+# on:
+#   push:
+#     branches:
+#       - main
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout 🛎️
+#         uses: actions/checkout@master
+
+#       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+#         run: |
+#           npm install
+#           npm run build
+
+#       - name: Deploy 🚀
+#         uses: JamesIves/github-pages-deploy-action@v4.2.3
+#         with:
+#           branch: gh-pages # The branch the action should deploy to.
+#           folder: docs # The folder the action should deploy.
+name: Build And Deploy To Github Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
+      - name: choose node version
+        uses: actions/setup-node@v1 
+        with: 
+          node-version: 16.x 
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: main
+          FOLDER: docs

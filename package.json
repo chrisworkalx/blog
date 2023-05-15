@@ -1,0 +1,43 @@
+{
+  "name": "blog",
+  "version": "0.0.6",
+  "description": "前端开发,前端学习资料,js,vue,react",
+  "main": "./index",
+  "module": "./index",
+  "scripts": {
+    "dev": "vuepress dev documents",
+    "build": "vuepress build documents",
+    "pub": "npm publish --registry=https://registry.npmjs.org",
+    "login": "npm login --registry=https://registry.npmjs.org",
+    "postpublish": "git push origin main & git push github main & git push github --tag & git push origin --tag"
+  },
+  "files": [
+    "lib",
+    "test",
+    "index.ts",
+    "tsconfig.json",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kawayiLinLin/typescript-lodash.git"
+  },
+  "homepage": "https://kawayiLinLin.github.io/typescript-lodash",
+  "keywords": [
+    "typescript",
+    "Utility",
+    "Types",
+    "tool",
+    "util",
+    "ts",
+    "TS",
+    "TypeScript"
+  ],
+  "author": "kawayilinlin",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.5",
+    "vuepress": "^1.9.7",
+    "vuepress-sidebar-atuo": "1.0.4"
+  }
+}
