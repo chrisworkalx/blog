@@ -8,11 +8,19 @@ const nav = [
     items: [
       {
         text: 'vue2',
-        link: '/vueFolder/vue2/介绍.md'
+        link: '/vueFolder/vue2/1.介绍.md'
       },
       {
         text: 'vue3',
-        link: '/vueFolder/vue3/介绍.md'
+        link: '/vueFolder/vue3/1.介绍.md'
+      },
+      {
+        text: 'vuex',
+        link: '/vueFolder/vuex/1.介绍.md'
+      },
+      {
+        text: 'vueRouter',
+        link: '/vueFolder/vueRouter/1.介绍.md'
       }
     ]
   },
@@ -26,11 +34,20 @@ const nav = [
       {
         text: 'react_hooks',
         link: '/reactFolder/react_hooks/1.介绍.md'
+      },
+      {
+        text: 'redux',
+        link: '/reactFolder/redux/1.介绍.md'
+      },
+      {
+        text: 'react-router',
+        link: '/reactFolder/react-router/1.介绍.md'
       }
     ]
   },
-  { text: 'js', link: '/js/1.介绍.md' },
-  { text: 'html', link: '/html/1.介绍.md' }
+  { text: 'JS', link: '/js/1.介绍.md' },
+  { text: 'HTML', link: '/html/1.介绍.md' },
+  { text: 'CSS', link: '/css/1.介绍.md' }
 ];
 
 let sideBarConfigArr = [];
