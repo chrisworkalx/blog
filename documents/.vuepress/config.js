@@ -7,6 +7,9 @@ module.exports = {
   dest: './docs', //打包到指定的目录中
   head: [['link', { rel: 'icon', href: `/superhuman.jpg` }]],
   evergreen: true,
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     lastUpdated: '最后更新时间',
     sidebar: require('./sidebar').sidebar,
