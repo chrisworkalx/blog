@@ -21,6 +21,10 @@ const nav = [
       {
         text: 'vueRouter',
         link: '/vueFolder/vueRouter/1.介绍.md'
+      },
+      {
+        text: 'Repos',
+        link: '/vueFolder/repos/1.介绍.md'
       }
     ]
   },
